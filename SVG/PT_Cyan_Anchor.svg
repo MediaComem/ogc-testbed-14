@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Basic//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" baseProfile="basic" id="Ebene_2" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="321.473px" height="447.855px" viewBox="0 0 321.473 447.855" xml:space="preserve">
+<path fill="#009FE3" d="M162.576,36.524c12.338,0,22.375,10.037,22.375,22.375s-10.037,22.375-22.375,22.375
+	s-22.374-10.037-22.374-22.375S150.239,36.524,162.576,36.524 M162.576,5.524c-29.479,0-53.374,23.896-53.374,53.375
+	s23.896,53.375,53.374,53.375s53.375-23.896,53.375-53.375S192.055,5.524,162.576,5.524L162.576,5.524z"/>
+<line fill="none" stroke="#009FE3" stroke-width="31" stroke-miterlimit="10" x1="83.436" y1="179.144" x2="241.718" y2="179.144"/>
+<path fill="none" stroke="#009FE3" stroke-width="31" stroke-miterlimit="10" d="M46.013,382.506c0,0,37.423,47.854,116.563,47.854
+	V98.775"/>
+<path fill="none" stroke="#009FE3" stroke-width="31" stroke-miterlimit="10" d="M280.857,383.438c0,0-39.14,46.921-115.604,46.921"
+	/>
+<path fill="none" stroke="#E30613" stroke-width="31" stroke-miterlimit="10" d="M162.576,430.358"/>
+<path fill="none" stroke="#E30613" stroke-width="31" stroke-miterlimit="10" d="M162.576,430.358"/>
+<polygon fill="#009FE3" points="318.255,334.969 247.993,369.309 299.411,409.897 "/>
+<polygon fill="#009FE3" points="3.093,335.571 24.479,410.795 73.514,367.356 "/>
+</svg>
