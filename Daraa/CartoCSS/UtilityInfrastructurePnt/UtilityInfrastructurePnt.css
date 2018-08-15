@@ -1,0 +1,14 @@
+/* @title Pylon */
+[f_code = 'AT042'][zi006_mem =~".*tower.*"][zoom > 11]{
+  marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/pylon_wilson.svg');
+  marker-width:20;
+  marker-allow-overlap: true;
+  [zoom >= 14]{
+    text-name:"'Pylon'";
+    text-face-name: 'Open Sans Regular';
+    text-allow-overlap: true;
+    text-size: 12;
+    text-halo-radius: 1;
+    text-dy: 18;
+  }
+}

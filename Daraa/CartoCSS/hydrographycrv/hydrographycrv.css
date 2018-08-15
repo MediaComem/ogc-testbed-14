@@ -1,0 +1,12 @@
+/* @title River, Permanent */
+[f_code = 'BH140'][zi006_mem !=".*drain.*"][zoom > 11]{
+	line-color: #00A0C6;
+  	line-width: 10;
+}
+
+/* @title River, Intermittent */
+[f_code = 'BH140'][zi006_mem =~".*drain.*"][zoom > 11]{
+	line-color: #00A0C6;
+  	line-width: 10;
+  	line-dasharray: 10,2.5;
+}

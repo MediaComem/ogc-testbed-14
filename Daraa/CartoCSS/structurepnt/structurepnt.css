@@ -1,0 +1,42 @@
+/* @title: Building, General */
+[f_code = 'AL013']{
+    [zoom > 12] {
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/building.svg');
+    marker-width:13;
+    }
+     [zoom > 10][zoom <= 12]  {
+      marker-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/building.svg');
+  marker-width:1;
+    }
+}
+
+/* @title: Building, Mosque */
+[f_code = 'AL013'][zi006_mem =~".*muslim.*"][zi006_mem =~".*place_of_worship.*"]{
+    [zoom > 12] {
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/AR_Black_Mosque.svg');
+    marker-width:43;
+    }
+     [zoom > 10][zoom <= 12]  {
+      marker-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/PT_Black_Mosque.svg');
+  marker-width:5;
+    }
+}
+
+
+/* @title: Building, School */
+[f_code = 'AL013'][zi006_mem =~".*college.*"]{
+    [zoom > 12] {
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/PT_Black_School.svg');
+    marker-width:43;
+    }
+     [zoom > 10][zoom <= 12]  {
+      marker-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/PT_Black_School.svg');
+  marker-width:5;
+    }
+}
+
+/* @title: Building, Public */
+[f_code = 'AL013'][zi006_mem =~".*public_building.*"][zoom > 12]{
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/building.svg');
+    marker-width:23;
+}

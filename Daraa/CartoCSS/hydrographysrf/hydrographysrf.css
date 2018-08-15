@@ -1,0 +1,21 @@
+/* @title Lake */
+[f_code = 'BH082'][zoom > 11]{
+	polygon-fill: #B0E1ED;
+  	line-color: #00A0C6;
+  	line-width: 5;
+}
+
+/* @title Dam (No Transportation)*/
+::damline[f_code = 'BI020'][zoom > 10]{
+	line-color: #000000;
+  	line-width: 10;
+}
+
+/* @title Dam*/
+::damfill[f_code = 'BI020'][zoom > 10]{
+	marker-file:url("https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/PT_Black_Dam.svg");
+  marker-width:20;
+}
+
+
+

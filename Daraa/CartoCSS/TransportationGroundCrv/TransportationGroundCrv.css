@@ -1,0 +1,274 @@
+/* @title: Road Primary */
+[f_code = 'AP030'][zi006_mem =~".*primary.*"]{
+  [zoom > 16]{
+      line-color:#000000;  
+      line-width:12;
+    ::z1{
+      line-color:#cb171a;
+      line-width:6;
+    }
+  }
+  [zoom <= 16][zoom > 13]{
+      line-color:#000000;  
+      line-width:6.3;
+    ::z1{
+      line-color:#cb171a;
+      line-width:4.655;
+    }
+  }
+  [zoom <= 13][zoom > 10]{
+      line-color:#000000;  
+      line-width:3;
+    ::z1{
+      line-color:#cb171a;
+      line-width:2.25;
+    }
+  }
+  [zoom <= 10][zoom > 5]{
+      line-color:#000000;  
+      line-width:1.5;
+    ::z1{
+      line-color:#cb171a;
+      line-width:1.14;
+    }
+  }
+  [zoom <= 5]{
+      line-color:#000000;  
+      line-width:1.14;
+    ::z1{
+      line-color:#cb171a;
+      line-width:0.9;
+    }
+  }
+}
+
+/* @title: Road Secondary  */
+[f_code = 'AP030'][zi006_mem =~".*secondary.*"]{
+  [zoom > 16]{
+      line-color:#000000;  
+      line-width:12;
+    ::z1{
+      line-color:#cb171a;
+      line-width:8;
+    }
+  }
+  [zoom <= 16][zoom > 13]{
+      line-color:#000000;  
+      line-width:6.3;
+    ::z1{
+      line-color:#cb171a;
+      line-width:4.655;
+    }
+  }
+  [zoom <= 13][zoom > 10]{
+      line-color:#000000;  
+      line-width:3;
+    ::z1{
+      line-color:#cb171a;
+      line-width:2.25;
+    }
+  }
+  [zoom <= 10][zoom > 5]{
+      line-color:#000000;  
+      line-width:1.5;
+    ::z1{
+      line-color:#cb171a;
+      line-width:1.14;
+    }
+  }
+  [zoom <= 5]{
+      line-color:#000000;  
+      line-width:0.9;
+    ::z1{
+      line-color:#cb171a;
+      line-width:0.9;
+    }
+  }
+}
+
+/* @title: tertiary */
+[f_code = 'AP030'][zi006_mem =~".*trunk.*"]{
+  [zoom > 16]{
+      line-color:#000000;  
+      line-width:9;
+    ::z1{
+      line-color:#cb171a;
+      line-width:6;
+    }
+  }
+  [zoom <= 16][zoom > 13]{
+      line-color:#000000; 
+      /*line-width: 4.725*/
+      line-width:3.725;
+    ::z1{
+      line-color:#cb171a;
+        /*line-width: 3.491*/
+      line-width:2.491;
+    }
+  }
+  [zoom <= 13][zoom > 10]{
+      line-color:#000000;  
+      /*line-width: 2.250*/
+      line-width:1.9;
+    ::z1{
+      line-color:#cb171a;
+        /*line-width: 1.688*/
+      line-width:1.2;
+    }
+  }
+  [zoom <= 10][zoom > 5]{
+      line-color:#000000;  
+      line-width:1.125;
+    ::z1{
+      line-color:#cb171a;
+      line-width:0.855;
+    }
+  }
+  [zoom <= 5]{
+      line-color:#000000;  
+      line-width:0.855;
+    ::z1{
+      line-color:#cb171a;
+      line-width:0.675;
+    }
+  }
+}
+
+/* @title: Street */
+[f_code = 'AP030'][zi006_mem =~".*residential.*"]{
+  [zoom > 16]{
+      line-color:#000000;  
+      line-width:9;
+    ::z1{
+      line-color:#FFFFFF;
+      line-width:6;
+    }
+  }
+  [zoom <= 16][zoom > 13]{
+      line-color:#000000; 
+      /*line-width: 4.725*/
+      line-width:3.725;
+    ::z1{
+      line-color:#FFFFFF;
+        /*line-width: 3.491*/
+      line-width:2.491;
+    }
+  }
+  [zoom <= 13][zoom > 10]{
+      line-color:#000000;  
+      /*line-width: 2.250*/
+      line-width:1.9;
+    ::z1{
+      line-color:#FFFFFF;
+        /*line-width: 1.688*/
+      line-width:1.2;
+    }
+  }
+  [zoom <= 10][zoom > 5]{
+      line-color:#000000;  
+      line-width:1.125;
+    ::z1{
+      line-color:#FFFFFF;
+      line-width:0.855;
+    }
+  }
+  [zoom <= 5]{
+      line-color:#000000;  
+      line-width:0.855;
+    ::z1{
+      line-color:#FFFFFF;
+      line-width:0.675;
+    }
+  }
+}
+
+/* @title: Trail */
+[f_code = 'AP050']{
+  [zoom > 13]{
+      line-color:#000000;  
+      line-width:4.5;
+      ::z1{
+          line-color:#FFFFFF;  
+          line-width:4.5;
+          line-dasharray: 10,18,3,5;
+      }
+    }
+  [zoom <= 13][zoom > 10]{
+      line-color:#000000;  
+      line-width:2.63;
+      ::z1{
+          line-color:#FFFFFF;  
+          line-width:2.63;
+          line-dasharray: 10,18,3,5;
+      }
+    }
+}
+
+/*@title: Cart Track*/
+[f_code = 'AP010']{
+  [zoom > 16]{ 
+    line-color:#000000;  
+      line-width:12;
+      ::z1{
+          line-color:#f7ab82; 
+          line-width:8;
+      }
+      ::z2{
+          line-color:#FFFFFF;  
+          line-width:8;
+          line-dasharray: 18.1,39.82,6.033,13.273;
+      }
+  }
+  [zoom <= 16][zoom > 13]{ 
+    line-color:#000000;  
+      line-width:6.3;
+      ::z1{
+          line-color:#f7ab82; 
+          line-width:4.655;
+      }
+      ::z2{
+          line-color:#FFFFFF;  
+          line-width:4.655;
+          line-dasharray: 10,22,3.333,7.333;
+      }
+  }
+  [zoom <= 13][zoom > 10]{ 
+    line-color:#000000;  
+      line-width:3;
+      ::z1{
+          line-color:#f7ab82; 
+          line-width:2.25;
+      }
+      ::z2{
+          line-color:#FFFFFF;  
+          line-width:2.25;
+          line-dasharray: 4.797,10.577,1.603,3.526;
+      }
+  }
+  [zoom <= 10][zoom > 5]{ 
+    line-color:#000000;  
+      line-width:1.5;
+      ::z1{
+          line-color:#f7ab82; 
+          line-width:1.14;
+      }
+      ::z2{
+          line-color:#FFFFFF;  
+          line-width:1.14;
+          line-dasharray: 2.415,5.323,0.807,1.774;
+      }
+  }
+  [zoom <= 5]{ 
+    line-color:#000000;  
+      line-width:1.14;
+      ::z1{
+          line-color:#f7ab82; 
+          line-width:0.9;
+      }
+      ::z2{
+          line-color:#FFFFFF;  
+          line-width:0.9;
+          line-dasharray: 1.870,4.124,0.625,1.375;
+      }
+  }
+}

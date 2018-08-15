@@ -1,0 +1,6 @@
+/* @title: Built Up Area */
+[f_code = 'AL020'][zoom > 11]{
+	polygon-fill: #E8C3B2;
+  	line-color: #000000;
+  	line-width: 5;
+}

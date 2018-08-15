@@ -1,0 +1,5 @@
+/*@title: Powerline, Non Obstruction */ 
+[f_code = 'AT005'][zi006_mem =~".*line.*"][zoom>12]{
+  line-color: #473895;
+  line-width: 5;
+}

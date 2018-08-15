@@ -1,0 +1,8 @@
+/* Geographic Name */
+[zi006_mem =~".*locality.*"][zoom >= 10]{
+    text-name:[name];
+    text-face-name: 'Open Sans Regular';
+    text-allow-overlap: true;
+    text-size: 10;
+    text-halo-radius: 1;
+}

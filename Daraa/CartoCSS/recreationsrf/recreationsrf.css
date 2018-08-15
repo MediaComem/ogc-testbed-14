@@ -1,0 +1,11 @@
+/* @title Sports Ground */
+[f_code = 'AK040'][zoom > 13]{
+  	polygon-fill: #E8F3E2;
+  	line-color: #3EA250;
+  	line-width: 5;
+ 	line-dasharray: 5,2.5;
+}
+
+[f_code = 'AK040'][zoom > 11][zoom <= 13]{
+	marker-file:url("https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/sports_ground_wilson.svg");
+}

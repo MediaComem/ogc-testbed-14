@@ -1,0 +1,6 @@
+/* @title Cemetery, Unknown */
+[f_code = 'AL030'][zi006_mem =~".*cemetery.*"][zoom > 11]{
+	line-color: #000000;
+  	line-width: 5;
+  	line-dasharray: 2.5,1.25;
+}

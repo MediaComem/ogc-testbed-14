@@ -1,0 +1,8 @@
+/* @title: Cropland */
+[f_code = 'EA010'][zi006_mem =~".*farmland.*"][zoom > 11]{
+  polygon-fill: #F7EDED;
+  polygon-pattern-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/Green_AP77_Fill.svg');
+  /* Brownish color*/
+  polygon-pattern-opacity: 0.5;
+  polygon-pattern-gamma: 1;
+}
