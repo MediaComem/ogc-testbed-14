@@ -1,0 +1,45 @@
+{
+    "id": "recreationsrf_fill",
+    "type": "fill",
+    "source": "composite",
+    "source-layer": "RecreationSrf-9581nn",
+    "layout": {},
+    "paint": {
+        "fill-color": [
+            "match",
+            [
+                "get",
+                "F_CODE"
+            ],
+            "AK040",
+            "hsl(99, 41%, 92%)",
+            "hsla(99, 41%, 92%, 0)"
+        ],
+        "fill-outline-color": "hsla(0, 0%, 0%, 0)"
+    }
+},
+{
+    "id": "recreationsrf_line",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "RecreationSrf-9581nn",
+    "layout": {},
+    "paint": {
+        "line-color": [
+            "match",
+            [
+                "get",
+                "F_CODE"
+            ],
+            "AK040",
+            "hsl(131, 45%, 44%)",
+            "hsla(131, 45%, 44%, 0)"
+        ],
+        "line-width": 2,
+        "line-offset": 2,
+        "line-dasharray": [
+            5,
+            2.5
+        ]
+    }
+}
