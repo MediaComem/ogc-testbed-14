@@ -1,0 +1,74 @@
+{
+    "id": "2525testbedinfo_frame",
+    "type": "symbol",
+    "source": "composite",
+    "source-layer": "2525TestbedInfo.shp",
+    "filter": [
+        "==",
+        "StndID_1",
+        0
+    ],
+    "layout": {
+        "icon-image": [
+            "match",
+            [
+                "get",
+                "StndID_2"
+            ],
+            2,
+            "0310_Friend",
+            3,
+            "0410_Neutral",
+            4,
+            "0510_Suspect_Joker",
+            5,
+            "0600_Hostile_Faker",
+            ""
+        ],
+        "icon-size": 0.1,
+        "icon-allow-overlap": true
+    },
+    "paint": {}
+},
+{
+    "id": "2525testbedinfo_symbol",
+    "type": "symbol",
+    "source": "composite",
+    "source-layer": "2525TestbedInfo.shp",
+    "layout": {
+        "icon-image": [
+            "case",
+            [
+                "==",
+                [
+                    "get",
+                    "Entity"
+                ],
+                28
+            ],
+            "25280201%20Antipersonnel%20Mine%20with%20Directional%20Effects",
+            [
+                "==",
+                [
+                    "get",
+                    "Entity"
+                ],
+                11
+            ],
+            "11110400_Organization%20or%20Group",
+            [
+                "==",
+                [
+                    "get",
+                    "Entity"
+                ],
+                19
+            ],
+            "10190000_Emergency_Operation",
+            ""
+        ],
+        "icon-size": 0.1,
+        "icon-allow-overlap": true
+    },
+    "paint": {}
+}

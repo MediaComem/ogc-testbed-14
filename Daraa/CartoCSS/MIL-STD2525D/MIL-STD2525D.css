@@ -1,0 +1,44 @@
+/* @title: MIL_STD2525D */
+/*color background*/
+[zoom > 11]{
+  [stndid_1 = 0][stndid_2 != 999] {
+    marker-width:40;
+    
+    [stndid_2 = 2] {
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/Frames/0310_Friend.svg');
+    }
+     [stndid_2 = 3] {
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/Frames/0410_Neutral.svg');
+    }
+
+    [stndid_2 = 4] {
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/Frames/0510_Suspect_Joker.svg');
+    }
+
+      [stndid_2 = 5] {
+     marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/Frames/0600_Hostile_Faker.svg');
+    }
+
+  }
+  
+/*symbol*/
+::symbol{
+      [entity = 28]{
+          marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/Symbol/25280201%20Antipersonnel%20Mine%20with%20Directional%20Effects.svg');
+      marker-transform: rotate([angle]-90);
+    	marker-width:30;
+    	marker-allow-overlap:true;
+    }
+
+      [entity = 19] {
+      	marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/Symbol/10190000_Emergency_Operation.svg');
+    	marker-width:25;
+    	marker-allow-overlap:true;
+    }
+      [entity = 11] {
+      	marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/Symbol/11110400_Organization%20or%20Group.svg');
+    	marker-width:20;
+    	marker-allow-overlap:true;
+    }    
+  }
+}
