@@ -2,23 +2,27 @@
 [f_code = 'AL013']{
     [zoom > 12] {
       marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/building.svg');
-    marker-width:13;
+    marker-width:10;
+    marker-height:10;
     }
      [zoom > 10][zoom <= 12]  {
       marker-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/building.svg');
-  marker-width:1;
+    marker-width:5;
+    marker-height:5;
     }
 }
 
 /* @title: Building, Mosque */
 [f_code = 'AL013'][zi006_mem =~".*muslim.*"][zi006_mem =~".*place_of_worship.*"]{
     [zoom > 12] {
-      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/AR_Black_Mosque.svg');
-    marker-width:43;
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/modified/PT_Black_Mosque.svg');
+    marker-width:20;
+    marker-height:20;
     }
      [zoom > 10][zoom <= 12]  {
-      marker-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/PT_Black_Mosque.svg');
+      marker-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/modified/AR_Black_Mosque.svg');
   marker-width:5;
+    marker-height:5;
     }
 }
 
@@ -26,17 +30,20 @@
 /* @title: Building, School */
 [f_code = 'AL013'][zi006_mem =~".*college.*"]{
     [zoom > 12] {
-      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/PT_Black_School.svg');
-    marker-width:43;
+      marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/modified/PT_Black_School.svg');
+    marker-width:20;
+    marker-height:20;
     }
      [zoom > 10][zoom <= 12]  {
-      marker-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/PT_Black_School.svg');
+      marker-file:url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/modified/AR_Black_School.svg');
   marker-width:5;
+    marker-height:5;
     }
 }
 
 /* @title: Building, Public */
 [f_code = 'AL013'][zi006_mem =~".*public_building.*"][zoom > 12]{
       marker-file: url('https://raw.githubusercontent.com/MediaComem/ogc-testbed-14/master/SVG/building.svg');
-    marker-width:23;
+    marker-width:15;
+    marker-height:15;
 }
