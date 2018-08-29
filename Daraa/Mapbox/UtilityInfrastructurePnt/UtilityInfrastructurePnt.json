@@ -1,0 +1,22 @@
+{
+    "id": "utilityinfrastructurepnt_pattern",
+    "type": "symbol",
+    "source": "composite",
+    "source-layer": "UtilityInfrastructurePnt.shp",
+    "layout": {
+        "icon-image": "pylon_wilson",
+        "icon-size": 1.5,
+        "text-field": "Pylon",
+        "text-size": 12,
+        "text-padding": 2,
+        "text-anchor": "top",
+        "text-offset": [
+            0,
+            0.8
+        ]
+    },
+    "paint": {
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+    }
+},

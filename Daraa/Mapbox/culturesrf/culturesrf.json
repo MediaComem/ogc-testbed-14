@@ -1,0 +1,30 @@
+{
+    "id": "culturesrf_line",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "CultureSrf.shp",
+    "minzoom": 11,
+    "filter": [
+        "all",
+        [
+            "==",
+            "F_CODE",
+            "AL030"
+        ],
+        [
+            "in",
+            "$type",
+            "LineString",
+            "Point",
+            "Polygon"
+        ]
+    ],
+    "layout": {},
+    "paint": {
+        "line-width": 5,
+        "line-dasharray": [
+            5,
+            2.5
+        ]
+    }
+},

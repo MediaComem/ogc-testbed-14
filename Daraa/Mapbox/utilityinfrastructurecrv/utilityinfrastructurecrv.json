@@ -1,0 +1,11 @@
+{
+    "id": "utilityinfrastructurecrv_line",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "UtilityInfrastructureCrv.shp",
+    "layout": {},
+    "paint": {
+        "line-color": "hsl(250, 45%, 40%)",
+        "line-width": 2
+    }
+},

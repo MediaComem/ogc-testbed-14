@@ -1,0 +1,10 @@
+{
+    "id": "vegetationsrf_fill",
+    "type": "fill",
+    "source": "composite",
+    "source-layer": "VegetationSrf.shp",
+    "layout": {},
+    "paint": {
+        "fill-color": "hsl(107, 44%, 81%)"
+    }
+},

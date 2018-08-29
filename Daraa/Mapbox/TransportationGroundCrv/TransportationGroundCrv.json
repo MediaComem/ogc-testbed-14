@@ -1,0 +1,240 @@
+{
+    "id": "transportationgroundcrv_base_highways",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "TransportationGroundCrv.shp",
+    "filter": [
+        "==",
+        "F_CODE",
+        "AP030"
+    ],
+    "layout": {},
+    "paint": {
+        "line-width": [
+            "match",
+            [
+                "get",
+                "OSM_T_ROA"
+            ],
+            "primary",
+            6.3,
+            "secondary",
+            6.3,
+            "trunk",
+            3.725,
+            "residential",
+            3.725,
+            6.3
+        ],
+        "line-color": [
+            "match",
+            [
+                "get",
+                "OSM_T_ROA"
+            ],
+            "primary",
+            "hsl(0, 0%, 0%)",
+            "secondary",
+            "hsl(0, 0%, 0%)",
+            "trunk",
+            "hsl(0, 0%, 0%)",
+            "residential",
+            "#000000",
+            "hsla(0, 0%, 0%, 0)"
+        ]
+    }
+},
+{
+    "id": "transportationgroundcrv_front_Highways",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "TransportationGroundCrv.shp",
+    "filter": [
+        "==",
+        "F_CODE",
+        "AP030"
+    ],
+    "layout": {},
+    "paint": {
+        "line-color": [
+            "match",
+            [
+                "get",
+                "OSM_T_ROA"
+            ],
+            "primary",
+            "hsl(359, 80%, 44%)",
+            "secondary",
+            "hsl(359, 80%, 44%)",
+            "trunk",
+            "hsl(359, 80%, 44%)",
+            "residential",
+            "#ffffff",
+            "hsla(359, 80%, 44%, 0)"
+        ],
+        "line-width": [
+            "match",
+            [
+                "get",
+                "OSM_T_ROA"
+            ],
+            "primary",
+            4.655,
+            "secondary",
+            4.655,
+            "trunk",
+            2.491,
+            "residential",
+            2.491,
+            4.655
+        ]
+    }
+},
+{
+    "id": "transportationgroundcrv-base_path_black",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "TransportationGroundCrv.shp",
+    "filter": [
+        "any",
+        [
+            "==",
+            "F_CODE",
+            "AP010"
+        ],
+        [
+            "==",
+            "F_CODE",
+            "AP050"
+        ]
+    ],
+    "layout": {},
+    "paint": {
+        "line-width": [
+            "match",
+            [
+                "get",
+                "F_CODE"
+            ],
+            "AP010",
+            6.3,
+            "AP050",
+            2.363,
+            0
+        ],
+        "line-color": [
+            "match",
+            [
+                "get",
+                "F_CODE"
+            ],
+            "AP050",
+            "hsl(0, 0%, 0%)",
+            "AP010",
+            "hsl(0, 0%, 0%)",
+            "hsla(0, 0%, 0%, 0)"
+        ]
+    }
+},
+{
+    "id": "transportationgroundcrv-base_path_pink",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "TransportationGroundCrv.shp",
+    "filter": [
+        "any",
+        [
+            "==",
+            "F_CODE",
+            "AP010"
+        ],
+        [
+            "==",
+            "F_CODE",
+            "AP050"
+        ]
+    ],
+    "layout": {},
+    "paint": {
+        "line-color": [
+            "match",
+            [
+                "get",
+                "F_CODE"
+            ],
+            "AP010",
+            "#f7ab82",
+            "hsla(0, 0%, 0%, 0)"
+        ],
+        "line-width": 4.655
+    }
+},
+{
+    "id": "transportationgroundcrv-front_path_white",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "TransportationGroundCrv.shp",
+    "filter": [
+        "any",
+        [
+            "==",
+            "F_CODE",
+            "AP010"
+        ],
+        [
+            "==",
+            "F_CODE",
+            "AP050"
+        ]
+    ],
+    "layout": {},
+    "paint": {
+        "line-width": [
+            "match",
+            [
+                "get",
+                "F_CODE"
+            ],
+            "AP050",
+            2.363,
+            "AP010",
+            4.655,
+            2.363
+        ],
+        "line-color": [
+            "match",
+            [
+                "get",
+                "F_CODE"
+            ],
+            "AP050",
+            "hsl(0, 0%, 100%)",
+            "#ffffff"
+        ],
+        "line-dasharray": [
+            "step",
+            [
+                "zoom"
+            ],
+            [
+                "literal",
+                [
+                    5,
+                    9,
+                    1.5,
+                    2.5
+                ]
+            ],
+            22,
+            [
+                "literal",
+                [
+                    5,
+                    9,
+                    1.5,
+                    2.5
+                ]
+            ]
+        ]
+    }
+},

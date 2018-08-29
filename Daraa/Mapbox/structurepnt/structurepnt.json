@@ -1,0 +1,37 @@
+{
+    "id": "structurepnt_symbols",
+    "type": "symbol",
+    "source": "composite",
+    "source-layer": "StructurePnt.shp",
+    "layout": {
+        "icon-image": [
+            "match",
+            [
+                "get",
+                "OSM_T_WAT"
+            ],
+            "college",
+            "AR_Black_School",
+            "muslim",
+            "AR_Black_Mosque",
+            "building"
+        ],
+        "icon-size": [
+            "match",
+            [
+                "get",
+                "OSM_T_WAT"
+            ],
+            "muslim",
+            2,
+            "college",
+            2,
+            "public_building",
+            0.3,
+            0.2
+        ]
+    },
+    "paint": {
+        "icon-opacity": 1
+    }
+},

@@ -1,0 +1,57 @@
+{
+    "id": "hydrographycrv_drain",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "HydrographyCrv.shp",
+    "minzoom": 11,
+    "filter": [
+        "all",
+        [
+            "==",
+            "F_CODE",
+            "BH140"
+        ],
+        [
+            "==",
+            "OSM_T_WAT",
+            "drain"
+        ]
+    ],
+    "layout": {},
+    "paint": {
+        "line-color": "hsl(192, 100%, 39%)",
+        "line-width": 5,
+        "line-dasharray": [
+            "literal",
+            [
+                5,
+                1.5
+            ]
+        ]
+    }
+},
+{
+    "id": "hydrographycrv_rivers",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "HydrographyCrv.shp",
+    "minzoom": 11,
+    "filter": [
+        "all",
+        [
+            "!=",
+            "OSM_T_WAT",
+            "drain"
+        ],
+        [
+            "==",
+            "F_CODE",
+            "BH140"
+        ]
+    ],
+    "layout": {},
+    "paint": {
+        "line-color": "hsl(192, 100%, 39%)",
+        "line-width": 2
+    }
+},

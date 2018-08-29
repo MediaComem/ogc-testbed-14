@@ -1,0 +1,83 @@
+{
+    "id": "hydrographysrf_lake_fill",
+    "type": "fill",
+    "source": "composite",
+    "source-layer": "HydrographySrf.shp",
+    "minzoom": 10,
+    "filter": [
+        "==",
+        "F_CODE",
+        "BH082"
+    ],
+    "layout": {},
+    "paint": {
+        "fill-color": "hsl(192, 63%, 81%)",
+        "fill-outline-color": "hsla(192, 100%, 39%, 0)"
+    }
+},
+{
+    "id": "hydrographysrf_lake_line",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "HydrographySrf.shp",
+    "minzoom": 10,
+    "filter": [
+        "==",
+        "F_CODE",
+        "BH082"
+    ],
+    "layout": {},
+    "paint": {
+        "line-color": "hsl(192, 100%, 39%)",
+        "line-width": 2
+    }
+},
+{
+    "id": "hydrographysrf_dam_line",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "HydrographySrf.shp",
+    "minzoom": 11,
+    "filter": [
+        "==",
+        "F_CODE",
+        "BI020"
+    ],
+    "layout": {},
+    "paint": {
+        "line-width": 2
+    }
+},
+{
+    "id": "hydrographysrf_dam_pattern",
+    "type": "symbol",
+    "source": "composite",
+    "source-layer": "HydrographySrf.shp",
+    "minzoom": 11,
+    "filter": [
+        "all",
+        [
+            "==",
+            "F_CODE",
+            "BI020"
+        ],
+        [
+            "in",
+            "$type",
+            "LineString",
+            "Point",
+            "Polygon"
+        ]
+    ],
+    "layout": {
+        "icon-image": "PT_Black_Dam",
+        "icon-padding": 2,
+        "icon-size": 3
+    },
+    "paint": {
+        "icon-translate": [
+            -40,
+            135
+        ]
+    }
+},
